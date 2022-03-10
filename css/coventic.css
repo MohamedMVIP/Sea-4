@@ -116,7 +116,8 @@ button:hover {
 }
 @media (max-width:767px) {
     .aside-bar {
-        display: none;
+            height: 50%;
+    }
 }
 .aside-bar .image {
     margin-top: 45px;
