@@ -114,6 +114,10 @@ button:hover {
     width: 60px;
     z-index: 25;
 }
+@media (max-width:767px) {
+    .aside-bar {
+        display: none;
+}
 .aside-bar .image {
     margin-top: 45px;
     text-align: center;
