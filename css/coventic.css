@@ -1,0 +1,253 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: sans-serif;
+  }
+  /* Start global rules */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End global rules */
+  /* Start header */
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 40px;
+    z-index: 10;
+}
+.header .container {
+    display: flex;
+    justify-content: space-around;
+}
+.header .logo {
+    flex: 1;
+}
+.header .logo img {
+    width: 80px;
+}
+ button {
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    text-transform: capitalize;
+    z-index: 3;
+    transition:background 0.5s, border 0.5s;
+}
+button:hover {
+    background-color: #3efef3;
+    border: 1px solid #3efef3;
+    cursor: pointer;
+}
+.header button {
+    margin-right: 50px;
+
+}
+  /* End header */
+  /* Start landing */
+.landing {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    min-height:100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.landing .info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.landing .info span {
+    display: block;
+    font-weight: bold;
+}
+.landing .info h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 0;
+}
+@media (max-width:767px) {
+    .landing .info h1 {
+        font-size: 45px;
+    }
+}
+  /* End landing */
+  /* Start aside-bar */
+.aside-bar {
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    z-index: 25;
+}
+.aside-bar .image {
+    margin-top: 45px;
+    text-align: center;
+}
+.aside-bar .image img {
+    color: white;
+    width: 40px;
+}
+.aside-bar .links {
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    right: 0;
+    list-style: none;
+}
+.aside-bar .links li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #3efef3;
+    transition: 0.5s;
+}
+.aside-bar .links li i:hover {
+    color: white;
+    cursor: pointer;
+}
+  /* End aside-bar */
+.bubbles {
+    position: absolute;
+    width: 80%;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bubbles img {
+    width: 50px;
+    animation: bubble-move 7s linear infinite;
+    transition: 0.1s;
+}
+/* bubbles */
+@keyframes bubble-move {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+.bubbles img:first-child {
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 3s;
+
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3.5s;
+
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 4s;
+
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 5s;
+
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 5.5s;
+
+}
+/* bubbles */
+
+/* fishes */
+.fishes {
+    position: absolute;
+    right: -30px;
+    top: 55%;
+}
+.fishes img {
+    width: 70px;
+    animation: fishes-move 20s linear   infinite;
+    display: block;
+}
+.fishes img:nth-child(1) {
+    width: 70px;
+}
+.fishes img:nth-child(2) {
+    width: 100px;
+}
+@keyframes fishes-move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-200vh);
+        opacity: 0;
+    }
+}
+/* fishes */
+/* dolphins */
+.dolphin {
+    position: absolute;
+    top: 85%;
+    left: 0;
+
+}
+.dolphin img {
+    width: 150px;
+    animation: dolphins-move 20s linear   infinite;
+}
+@keyframes dolphins-move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200vh);
+        opacity: 0;
+    }
+}
+/* dolphins */
+
+
+  
