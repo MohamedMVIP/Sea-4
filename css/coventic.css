@@ -72,6 +72,11 @@ button:hover {
     margin-right: 50px;
 
 }
+@media (max-width:767px) {
+    .header button {
+        margin: 0;
+    }
+}
   /* End header */
   /* Start landing */
 .landing {
@@ -116,7 +121,7 @@ button:hover {
 }
 @media (max-width:767px) {
     .aside-bar {
-            height: 50%;
+        display: none;
     }
 }
 .aside-bar .image {
